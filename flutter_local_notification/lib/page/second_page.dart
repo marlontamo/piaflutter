@@ -3,10 +3,12 @@ import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 
 // ignore: must_be_immutable
 class SecondPage extends StatelessWidget {
+
   final flutterWebviewPlugin = new FlutterWebviewPlugin();
-   String title, body;
+   String payload, title, body;
 
    SecondPage({
+     @required this.payload,
     @required this.title,
     @required this.body,
     Key key,
